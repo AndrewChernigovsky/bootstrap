@@ -1,0 +1,258 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 18px;
+}
+body {
+	font-family: 'Roboto', Arial, sans-serif;
+	color: black;
+}
+header {
+	background-color: #EEEEEE;
+	padding: 35px 0 0;
+}
+
+.container {
+    max-width: 1240px;
+}
+
+.nav__list li a {
+	color:  black;
+	
+}
+
+.navbar-nav li a,
+.navbar-collapse button{
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 600;
+	font-family: 'Roboto', Arial, sans-serif;
+	color: black;
+}
+
+.navbar-nav li a.nav-link:not(.active) {
+	color: black;
+}
+
+.navbar-nav li a.nav-link.active {
+	border-bottom: 2px solid #FB565A;
+}
+
+.button {
+	background: transparent;
+	border: none;
+}
+
+.navbar-collapse {
+	flex-wrap: nowrap;
+}
+
+.navbar-wrapper, .navbar {
+	padding: 0;
+}
+
+.cart {
+	position: relative;
+	transition: 0.3s ease-in-out;
+}
+
+.cart:hover .cart::before {
+	opacity: 0.6;
+}
+
+.cart::before {
+	content: '';
+	background-image: url('../img/cart.svg');
+	width: 16px;
+	height: 16px;
+	display: block;
+	position: absolute;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+    left: -2px;
+    top: 0;
+}
+
+.carousel-item img {
+	width: 763px;
+	height: 431px;
+	object-fit: contain;
+	padding: 0;
+	margin-left: -9rem;
+}
+
+.carousel-item.active {
+	display: flex;
+}
+
+.carousel-item.flex {
+	display: flex;
+}
+
+.carusel-image {
+	width: 763px;
+	height: 431px;
+}
+
+.carousel-item h2 {
+	font-size: 55px;
+	line-height: 55px;
+}
+
+.carousel-item p {
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.button, .cart {
+	font-size: 16px;
+	line-height: 18px;
+	color: white;
+	text-align: center;
+	background-color: #FB565A;
+	border: none;
+	padding: 15px 54px;
+	transition: 0.3s ease-in-out;
+	text-transform: uppercase;
+}
+
+.cart {
+	background-color: transparent;
+	padding: 0;
+}
+
+.button {
+	border-radius: 3px;
+}
+
+.button:hover {
+	opacity: 0.5;
+}
+
+.carousel-item-wrapper {
+	display: flex;
+}
+
+.carousel-item-inner {
+	margin-top: 4rem;
+}
+
+.carousel-item-inner  p {
+	margin-bottom: 2.2rem;
+}
+
+.bg-yellow {
+	background-color: #EFC849;
+}
+
+.bg-green {
+	background-color: #00CA74;
+}
+
+.intro {
+	background-color: #EEEEEE;
+	margin-bottom: 80px;
+}
+
+.orders .container {
+	padding: 0 35px;
+}
+.orders__item h3{
+	font-size: 24px;
+}
+.orders__item p{
+	font-size: 16px;
+	line-height: 24px;
+	margin-bottom: 35px;
+}
+.orders__item .button{
+	padding: 15px 44px;
+}
+
+.carousel-item {
+ 	transition: transform 4s ease-in-out;
+ }
+
+ .carousel-fade .active.carousel-item-start,
+ .carousel-fade .active.carousel-item-end {
+ 	transition: opacity 0s 4s;
+ }
+
+.carousel-fade .carousel-inner  .carousel-item,
+.carousel-fade .carousel-inner  .active.left,
+.carousel-fade .carousel-inner  .active.right {
+	opacity: 0;
+}
+
+.carousel-fade .carousel-inner  .active,
+.carousel-fade .carousel-inner  .next.left,
+.carousel-fade .carousel-inner  .prev.right {
+	opacity: 1;
+}
+
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+	left: 0;
+	transform: translate3d(0, 0, 0);
+}
+
+.carousel-fade .carousel-inner .carousel-control {
+	z-index: 2;
+}
+
+.carousel-indicators [data-bs-target] {
+	width: 16px;
+	height: 16px;
+	background-color: white;
+	border-radius: 50%;
+	border: 2px solid white;
+	box-sizing: border-box;
+}
+
+.carousel-indicators .active {
+	border: 2px solid #C1C1C1;
+}
+
+.advantages__list li {
+	position: relative;
+}
+
+.advantages__list li::before {
+	position: absolute;
+	content: '';
+	width: 20px;
+	height: 2px;
+	background-color: #FB565A;
+	left: 0;
+	top: 12px;
+}
+
+.advantages .container {
+	padding: 0 40px;
+}
+
+.advantages__text {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	margin-bottom: 40px;
+}
+
+.advantages__text2 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.p {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+}
